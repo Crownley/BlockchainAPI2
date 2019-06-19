@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "16bd5321-b24e-4569-95b4-4ca81a7ec7fe",
+		"name": "POSTMAN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://wallet/v1/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t\"fullname\":\"Edgaras Avagyan 3\",\n\t\"username\":\"UserThree\",\n\t\"password\":\"password\"\n}"
+				},
+				"url": {
+					"raw": "http://wallet/v1/users",
+					"protocol": "http",
+					"host": [
+						"wallet"
+					],
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://wallet/v1/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t\"fullname\":\"Edgaras Avagyan 2\",\n\t\"username\":\"UserTwo\",\n\t\"password\":\"password\"\n}"
+				},
+				"url": {
+					"raw": "http://wallet/v1/users",
+					"protocol": "http",
+					"host": [
+						"wallet"
+					],
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://wallet/v1/assets/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "MDI5NjExYWM2NTc3ZjBmZDgzZDk1ZDA3ZDU3YmYwODkzMmM1MDQ5YWYxNWY0ZDNiMTU2MDk1MTMzNQ==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wallet/v1/assets/1",
+					"protocol": "http",
+					"host": [
+						"wallet"
+					],
+					"path": [
+						"v1",
+						"assets",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://wallet/v1/sessions/9",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "ODA5OWFhYjJiNmE5MTBkODk5MTM5ODlhYzNkMDEzZTgyZWY0ZmQzOTEwYWE4NWJkMTU2MDk1Mjc5NA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t\"username\":\"UserTwo\",\n\t\"password\":\"password\"\n}"
+				},
+				"url": {
+					"raw": "http://wallet/v1/sessions/9",
+					"protocol": "http",
+					"host": [
+						"wallet"
+					],
+					"path": [
+						"v1",
+						"sessions",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://wallet/v1/assets",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"name": "Content-Type",
+						"value": "MDI5NjExYWM2NTc3ZjBmZDgzZDk1ZDA3ZDU3YmYwODkzMmM1MDQ5YWYxNWY0ZDNiMTU2MDk1MTMzNQ==",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"amount\": 100,\n\t\"currency\": \"ETH\",\n\t\"label\":\"Binance\"\n}"
+				},
+				"url": {
+					"raw": "http://wallet/v1/assets",
+					"protocol": "http",
+					"host": [
+						"wallet"
+					],
+					"path": [
+						"v1",
+						"assets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://wallet/v1/sessions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t\"username\":\"UserThree\",\n\t\"password\":\"password\"\n}"
+				},
+				"url": {
+					"raw": "http://wallet/v1/sessions",
+					"protocol": "http",
+					"host": [
+						"wallet"
+					],
+					"path": [
+						"v1",
+						"sessions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://wallet/v1/assets",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "MDUyMzM2MjIyYzA4ZTVjNzIxODYzMDM1M2Q2ZWQ0ZjdjNDlmYmRkYTBjYzgzMTNiMTU2MDk1NDg1OQ==",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://wallet/v1/assets",
+					"protocol": "http",
+					"host": [
+						"wallet"
+					],
+					"path": [
+						"v1",
+						"assets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://wallet/v1/assets",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "YTdmYmEyNDcyMTM4ODNkNGM2ZjM2MDdiMjY2M2YyZDM4MjUyODUyOTIyM2E1ZjYzMTU2MDk1MTg1MA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"amount\": 150,\n\t\"currency\": \"ETH\",\n\t\"label\":\"Binance\"\n}"
+				},
+				"url": {
+					"raw": "http://wallet/v1/assets",
+					"protocol": "http",
+					"host": [
+						"wallet"
+					],
+					"path": [
+						"v1",
+						"assets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://wallet/v1/sessions/9",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"name": "Content-Type",
+						"value": "ODA5OWFhYjJiNmE5MTBkODk5MTM5ODlhYzNkMDEzZTgyZWY0ZmQzOTEwYWE4NWJkMTU2MDk1Mjc5NA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"refresh_token\": \"ZTlhY2Y0MjcxMTE0Nzc5NjIyZTc1NWVkZTFkMDNiZGExYjhkNWFlYjU0MmZmNzBhMTU2MDk1Mjc5NA==\"\n}"
+				},
+				"url": {
+					"raw": "http://wallet/v1/sessions/9",
+					"protocol": "http",
+					"host": [
+						"wallet"
+					],
+					"path": [
+						"v1",
+						"sessions",
+						"9"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "MDI5NjExYWM2NTc3ZjBmZDgzZDk1ZDA3ZDU3YmYwODkzMmM1MDQ5YWYxNWY0ZDNiMTU2MDk1MTMzNQ==",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
